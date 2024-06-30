@@ -1,0 +1,283 @@
+body{
+    background-color: #FDC0C0;
+    background-size: 100%;
+}
+
+.navbar .logo img {
+    width: 100px;
+    margin-top: -1px;
+}
+
+.navbar .header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 0; /* Menambahkan top untuk memastikan navbar berada di atas */
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    background-color: #F08F7F;
+    z-index: 9999;
+    font-family: 'Lato';
+}
+
+.navbar .header ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .header ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.navbar .header ul li a {
+    color: #FFFDFD;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.navbar .header ul li a:hover {
+    color: #000000;
+}
+
+.navbar .dropdown__menu {
+    display: none;
+}
+
+.navbar .header ul li:hover .dropdown__menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #F08F7F;
+}
+
+.navbar .header ul li:hover .dropdown__menu a {
+    margin-left: -35px;
+}
+
+.navbar .dropdown__menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.navbar .dropdown__menu ul li {
+    width: 120px;
+    padding: 8px;
+}
+
+.navbar .hkiri {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25px;
+    margin-top: 23px;
+}
+
+.navbar .login img {
+    width: 50px;
+    margin-top: -15px;
+}
+
+.navbar .keranjang img {
+    width: 45px;
+    margin-top: -10px;
+    margin-right: 15px;
+}
+
+.main-content {
+    display: flex;
+    margin-top: 190px; /* Memberikan ruang untuk navbar */
+}
+
+.sidebar h3{
+    margin-left: 20px;
+}
+
+.sidebar {
+    margin-left: 30px;
+    width: 200px;
+    height: fit-content;
+    background-color: #ffffff;
+    position: fixed ;
+    padding-top: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu .dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease 0s;
+}
+
+.sidebar-menu .dropdown .dropbtn:hover{
+    color: #F08F7F;
+}
+
+  /* Position the arrow */
+.dropbtn::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+.sidebar-menu .dropdown .dropbtn {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.sidebar-menu .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f8f8f8;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar-menu .dropdown-content a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    transition: 0.5s ease 0s;
+}
+
+.sidebar-menu .dropdown-content a:hover {
+    color: #FDC0C0;
+}
+
+.sidebar-menu .dropdown.active .dropdown-content {
+    display: block;
+}
+
+.container-produk {
+    margin-left: 15%;
+    display: flex;
+    margin-top: -105px;
+    flex: 1;
+    padding: 20px;
+}
+
+.kucing {
+    margin-bottom: -20px;
+}
+
+.kucing h2{
+    margin-bottom: -1px;
+}
+
+#MakananKucing {
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#AksesorisKucing{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.Ikan h2{
+    margin-top: 20px;
+    margin-bottom: -1px;
+}
+
+#MakananIkan {
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#AksesorisIkan{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.Anjing {
+    margin-bottom: -20px;
+}
+
+.Anjing h2{
+    margin-bottom: -1px;
+}
+
+#MakananAnjing {
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#AksesorisAnjing{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.image-container1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.image-box1 {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+}
+
+.image-box1 img {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.image-box1 h3,
+.image-box1 h4 {
+    margin: 10px 0;
+}
+
+.image-box1 .see-more button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
