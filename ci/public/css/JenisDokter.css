@@ -1,0 +1,137 @@
+body{
+    background-color: #FDC0C0;
+    background-size: 100%;
+    margin-top: 130px;
+}
+
+.wavefooter {
+    margin-top: -20px;
+}
+
+h1 {
+    height: 35px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: left;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+table {
+    text-align: center;
+    font-family: lato;
+    font-style: normal;
+}
+
+k {
+    color: #000;
+    text-align: center;
+    font-family: imprima;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.gambar {
+    display: flex;
+    justify-content: center;
+}
+
+.keterangan {
+    color: #000;
+    text-align: justify;
+    font-family: imprima;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 425;
+    line-height: 25px;
+}
+
+button[type="Harga"] {
+    width: 200px;
+    height: 35px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+button a{
+    font-family: lato;
+    font-size: 15px;
+    font-style:normal;
+    font-weight: 600;
+    line-height: normal;
+    color: black;
+    text-decoration: none;
+}
+
+button[type="Booking"] {
+    width: 139px;
+    height: 35px;
+    flex-shrink: 0;
+    background-color: #FFF;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.kembali {
+    color: #000;
+    text-align: center;
+    font-family: lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: -10px;
+    text-decoration: none;
+}
+
+.headertabel {
+    color: #000;
+    background-color: #E5E4E4;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.abuabu {
+    color: #000;
+    background-color: #D9D9D9;
+    text-align: center;
+    font-family: lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.isitabel {
+    color: #000;
+    background-color: #fffCFC;
+    text-align: center;
+    font-family: lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h5 {
+    align-items: left;
+    font-style: normal;
+    font-weight: 300;
+    margin-top: 2px;
+    margin-left: 600px;
+    font-size: 12px;
+}

@@ -1,0 +1,69 @@
+body{
+    background-color: #FDC0C0;
+    background-size: 100%;
+    margin-top: 130px;
+}
+
+.wavefooter {
+    margin-top: -20px;
+}
+
+h1 {
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+table {
+    margin-top: -20px;
+    text-align: center;
+    padding: 50px;
+    border-collapse: collapse;
+    font-family: Lato;
+    font-style: normal;
+}
+
+k {
+    color: #000;
+    text-align: left;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.button {
+    background-color: #FB8F8F;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.promo1, .promo2, .promo3, .promo4, .promo5, .promo6 {
+    background-color: white;
+    margin: -20px 55px;
+    border-radius: 31px;
+    width: 330px;
+}
+
+.promo1 img, .promo2 img, .promo3 img, .promo4 img, .promo5 img, .promo6 img {
+    width: 330px;
+    height: 200px;
+}

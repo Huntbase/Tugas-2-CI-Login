@@ -1,0 +1,596 @@
+body{
+    background-size: 100%;
+    background-color: #F08F7F;
+}
+
+.navbar .logo img {
+    width: 100px;
+    margin-top: -1px;
+}
+
+.navbar .header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 0; /* Menambahkan top untuk memastikan navbar berada di atas */
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+    background-color: #F08F7F;
+    z-index: 9999;
+    font-family: 'Lato';
+}
+
+.navbar .header ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .header ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.navbar .header ul li a {
+    color: #FFFDFD;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.navbar .header ul li a:hover {
+    color: #000000;
+}
+
+.navbar .dropdown__menu {
+    display: none;
+}
+
+.navbar .header ul li:hover .dropdown__menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #F08F7F;
+}
+
+.navbar .header ul li:hover .dropdown__menu a {
+    margin-left: -35px;
+}
+
+.navbar .dropdown__menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.navbar .dropdown__menu ul li {
+    width: 120px;
+    padding: 8px;
+}
+
+.navbar .hkiri {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 25px;
+    margin-top: 23px;
+}
+
+.navbar .login img {
+    width: 50px;
+    margin-top: -15px;
+}
+
+.navbar .keranjang img {
+    display: flex;
+    width: 45px;
+    margin-top: -10px;
+    margin-right: 15px;
+    z-index: 10;
+}
+
+.cart{
+    display: block;
+    text-decoration: none;
+    z-index: 10;
+}
+
+#cart-count{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-style: normal;
+    margin-top: -60px;
+    margin-left: 45px;
+    z-index: 1;
+}
+
+.containers{
+    position: absolute;
+    top:64%;
+    transform: translate(-50%,-50%);
+    width:1315px;
+    height:600px;
+    padding:50px;
+    background-color: #F08F7F;
+}
+
+.containers.name{
+    font-family: 'Imprima';
+}
+
+#slide{
+    width:100%;
+}
+
+.item{
+    margin-left: 633px;
+    width: 100%;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow:  0 30px 50px #505050;
+}
+
+.item .content{
+    margin-left: 30px;
+    width: 100%;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow:  0 30px 50px #505050;
+}
+
+.item::after{
+    background-color: #F08F7F;
+}
+
+.item:nth-child(1),
+.item:nth-child(2){
+    left:0;
+    top:0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width:100%;
+    height:100%;
+    box-shadow: none;
+}
+
+.item:nth-child(3){
+    width: 180px;
+    height: 180px;
+    left: 53%;
+    top: 270px;
+}
+
+.item:nth-child(4){
+    width: 180px;
+    height: 180px;
+    left:calc(53% + 220px);
+    top: 270px;
+}
+
+.item:nth-child(5){
+    width: 180px;
+    height: 180px;
+    left:calc(53% + 440px);
+    top: 270px;
+}
+
+.item:nth-child(6){
+    width: 180px;
+    height: 180px;
+    left:calc(25% + 560px);
+    opacity: 0;
+}
+
+.content button{
+    font-weight: 900;
+    color: #F08F7F;
+    box-shadow:  0px 4px 4px #000000;
+}
+
+.item .content{
+    position: absolute;
+    top:39%;
+    left:85px;
+    width:550px;
+    height: 145px;
+    text-align: center;
+    padding: 2px;
+    background-color: #F08F7F;
+    border: 1px solid #fffdfd;
+    border-radius: 20px;
+    color:#fffdfd;
+    transform: translate(0,-50%);
+    display: none;
+    font-family: 'Imprima';
+}
+
+.item .content a button{
+    background-color: #fffdfd;
+}
+.item:nth-child(2) .content{
+    display: block;
+    z-index: 3;
+}
+.item .name{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 35px;
+    opacity: 0;
+    animation:showcontent 1s ease-in-out 1 forwards
+}
+.item .des{
+    margin:5px 0;
+    opacity: 0;
+    animation:showcontent 1s ease-in-out 0.3s 1 forwards
+}
+.item button{
+    padding:10px 20px;
+    border:none;
+    opacity: 0;
+    margin-top: 50px;
+    animation:showcontent 1s ease-in-out 0.6s 1 forwards
+}
+
+@keyframes showcontent{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter:blur(33px);
+    }to{
+        opacity: 1;
+        transform: translate(0,0);
+        filter:blur(0);
+    }
+}
+
+.buttons{
+    position: absolute;
+    margin-left: 1430px;
+    bottom: 250px;
+    z-index: 4;
+    text-align: center;
+    width: 30%;
+}
+
+.buttons button{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:1px solid #F08F7F;
+    transition: 0.5s;
+    background-color: #FFFDFD;
+}
+
+.buttons button:hover{
+    background-color: #d4d4d4;
+}
+
+.wave1 img {
+    margin-top: 574px;
+    width: 101.2%;
+    margin-left: -8px;
+    position: relative;
+    z-index: 1;
+}
+
+.aboutus{
+    width: 101.2%;
+    margin-left: -8px;
+    height: 750px;
+    position: relative;
+    z-index: 2;
+    margin-top: -5px;
+    background-color: #fffdfd;
+}
+
+.logoabout img {
+    width: 210px;
+}
+
+.aboutus .nama {
+    width: 100%;
+    font-family: Lato;
+    font-size: 35px;
+    color: #F08F7F;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.aboutus .subjudul {
+    font-size: 30px;
+    color: #F08F7F;
+    font-family: Lato;
+    font-weight: 700;
+}
+
+.keterangan {
+    text-align: justify;
+    font-family: 'Imprima';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 200px;
+}
+
+.hubungikami{
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.hubungikami h3{
+    padding: 3px;
+}
+.hubungikami a{
+    text-decoration: none;
+    color: black;
+}
+
+.alasan {
+    position: relative;
+    z-index: 6;
+}
+
+.wave2 {
+    margin-top: -250px;
+    width: 101.2%;
+    margin-left: -8px;
+    position: relative;
+    z-index: 5;
+}
+
+.alasan .hdua {
+    color: #fffcfc;
+    text-align: center;
+    font-family: Lato;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.lingkaran2 {
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.gambar2 {
+    max-width: 80%; 
+    max-height: 80%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+h5 {
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 7px;
+    margin-bottom: -15px;
+}
+
+.keterangan {
+    color: #000;
+    text-align: center;
+    font-family: imprima;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0px 20px;
+}
+
+.desc {
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 20px;
+    margin-top: -30px;
+}
+
+.desc h5 {
+    font-family: Lato;
+}
+
+.grid--33--33--33 {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.waverotate {
+    rotate: 180deg;
+    z-index: 2;
+    margin-top: -50px;
+    width: 101.2%;
+    margin-left: -8px;
+    position: relative;
+}
+
+.testimoni {
+    background: #fffcfc;
+    margin-top: -250px;
+    width: 101.2%;
+    margin-left: -8px;
+    height: 1000px;
+}
+
+.titletestimoni {
+    font-family: Lato;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 900;
+    color: #F08F7F;
+    padding-top: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+#slider {
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 10s slider infinite;
+}
+
+#slider figure img {
+    width: 5%;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    16.67% {
+        left: 0;
+    }
+    33.34% {
+        left: -100%;
+    }
+    50.01% {
+        left: -100%;
+    }
+    66.68% {
+        left: -200%;
+    }
+    83.35% {
+        left: -200%;
+    }
+    100% {
+        left: -200%;
+    }
+}
+
+.wavefooter {
+    margin-top: -300px;
+    width: 101.2%;
+    z-index: 9999999;
+    margin-left: -8px;
+}
+
+footer {
+    margin-top: -120px;
+    width: 100%;
+    position: absolute;
+    background: #F08F7F;
+    padding: 10px 0 30px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: -8px;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 30%;
+    color: #fff;
+}
+
+.col:nth-child(2), .col:nth-child(2) {
+    flex-basis: 15%;
+}
+
+.logofooter {
+    width:200px;
+    margin-left: 50px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    margin-left: -40px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li a:hover {
+    color: #000;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin: 20px auto;
+}
+
+.socialicons {
+    text-align: center;
+    color: #fff;
+}
+
+.socialicons i:hover {
+    color: #000;
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+}

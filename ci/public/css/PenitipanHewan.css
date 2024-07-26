@@ -1,0 +1,156 @@
+body{
+    background-color: #fdc0c0;
+    margin-top: 130px;
+}
+
+.wavefooter {
+    margin-top: -100px;
+}
+
+h1 {
+    margin-left: 250px;
+    margin-right: 250px;
+    height: 59px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h5 { 
+    margin-top: -10px;
+    height : 31px;
+    color: #000;
+    text-align: center;
+    font-family: imprima;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.judul {
+    height: 35px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    font-family: lato;
+    font-style: normal;
+    font-size: 20px;
+}
+
+k {
+    color: #000;
+    text-align: center;
+    font-family: imprima;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button[type=Booking] {
+    width: 140px;
+    height: 41px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+.Booking_text {
+    font-family: lato;
+    font-size: 20px;
+    font-style:normal;
+    font-weight: 400;
+    line-height: normal;
+    color: black;
+}
+
+button[type=Harga] {
+    height: 41px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.Harga_text {
+    font-family: lato;
+    font-size: 15px;
+    font-style:normal;
+    font-weight: 600;
+    line-height: normal;
+    color: black;
+    padding: 0 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+h2 {
+    height: 35px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.headertabel {
+    color: #000;
+    background-color: #E5E4E4;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.abuabu {
+    color: #000;
+    background-color: #D9D9D9;
+    text-align: center;
+    font-family: lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.isitabel {
+    color: #000;
+    background-color: #fffCFC;
+    text-align: center;
+    font-family: lato;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.tabelhargaph {
+    padding-bottom: 180px;
+}

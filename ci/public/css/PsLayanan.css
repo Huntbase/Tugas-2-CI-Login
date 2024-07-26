@@ -1,0 +1,64 @@
+body{
+    background-color: #FDC0C0;
+    background-size: 100%;
+    margin-top: 130px;
+}
+
+.wavefooter {
+    margin-top: -20px;
+}
+
+.judul {
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Lato;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+.detail{
+    color: #000000;
+    text-decoration: none;
+}
+
+.riwayat {
+    background-color: #fffcfc;
+    width: 85%;
+    height: 140px;
+    border-radius: 20px;
+    margin-left: 70px;
+    padding: 10px;
+}
+
+.riwayat h4 {
+    font-size: 25px;
+    font-family: lato;
+    color: black;
+    font-weight: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tanggal, .keterangan {
+    margin-top: -10px;
+    text-align: left;
+}
+
+.riwayat .nama {
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.riwayat .cek {
+    text-decoration: none;
+    color: black;
+    font-family: lato;
+    margin-left: 80%;
+    display: flex;
+    margin-top: -85px;
+}
